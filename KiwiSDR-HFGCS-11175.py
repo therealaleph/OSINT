@@ -8,8 +8,8 @@ class initiate:
         # YOU MAY YOUSE ANY KIWISDR WEBSITE, JUST REPLACE WITH THE LINK BELOW 
         self.driver.get("http://ciw321.cfars.ca:8174/?dqy73e8")
         # ^
-        time.sleep(10)
-        self.driver.find_element_by_id("id-freq-input").send_keys("11175")
+        time.sleep(5) #CHANGE THE SLEEP TIME ACCORDINGLY, IT DEPENDS ON YOUR OWN AND THE KIWISDR SPEED
+        self.driver.find_element_by_id("id-freq-input").send_keys("11175") #CHANGE 11175 to 8992,4274 or 15016 
         self.driver.find_element_by_id("id-freq-input").send_keys(Keys.RETURN)
         self.driver.find_element_by_id("id-readme-hide").click()
         self.driver.find_element_by_id("4-id-mode-col").click()
