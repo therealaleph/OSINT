@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 class initiate:
     def __init__(self):
         self.driver = webdriver.Firefox()
-        # YOU MAY YOUSE ANY KIWISDR WEBSITE, JUST REPLACE WITH THE LINK BELOW 
+        # YOU MAY USE ANY KIWISDR WEBSITE, JUST REPLACE WITH THE LINK BELOW 
         self.driver.get("http://ciw321.cfars.ca:8174/?dqy73e8")
         # ^
         time.sleep(5) #CHANGE THE SLEEP TIME ACCORDINGLY, IT DEPENDS ON YOUR OWN AND THE KIWISDR SPEED
