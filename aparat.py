@@ -1,4 +1,4 @@
-#This is a python code for download Aparat (shitty Iranian regime-affiliated video uploading website
+#This is a python code for download Aparat (shitty Iranian regime-affiliated video uploading website)
 #Don't forget to install the selenium and wget 
 #Don't forget to put the chromedriver (bin for linux and exe for windows) in the right directory 
 #For Windows: put it in the same folder as the code
