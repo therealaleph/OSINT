@@ -4,21 +4,21 @@
 #For Windows: put it in the same folder as the code
 #For linux: /usr/local/bin (And remove the executable_path from the 29th line)
 #Made by: https://twitter.com/no_itsmyturn aka Aleph / Aleph.wtf / Aleph.wtf/donate
-from ast import keyword
-import requests
-from selenium import webdriver
+import time
+import wget
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import time
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import wget
+
 
 def downloadall():
     with open("downloadlinks.txt","r") as f:
         links = f.read().splitlines()
         for i in range(len(links)):
             wget.download(links[i], out =str(i+1)+".mp4")
+
+
 def downloader(number,url):
     listt = []
     url = url
@@ -95,7 +95,6 @@ def getlinks(url):
         print(str(len(links)) + " Videos were found!")
         for b in range(len(links)):
             print("Video #" + str(b))
-            #wget.download(downloader(b,links[b]), out =str(b)+".mp4")
             with open("downloadlinks.txt","a+") as f:
                 f.write(downloader(b,links[b]))
                 f.write("\n")
