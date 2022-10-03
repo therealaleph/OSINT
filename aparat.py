@@ -1,3 +1,9 @@
+#This is a python code for download Aparat (shitty Iranian regime-affiliated video uploading website
+#Don't forget to install the selenium and wget 
+#Don't forget to put the chromedriver (bin for linux and exe for windows) in the right directory 
+#For Windows: put it in the same folder as the code
+#For linux: /usr/local/bin (And remove the executable_path from the 29th line)
+#Made by: https://twitter.com/no_itsmyturn aka Aleph / Aleph.wtf / Aleph.wtf/donate
 from ast import keyword
 import requests
 from selenium import webdriver
@@ -13,8 +19,6 @@ def downloadall():
         links = f.read().splitlines()
         for i in range(len(links)):
             wget.download(links[i], out =str(i+1)+".mp4")
-
-
 def downloader(number,url):
     listt = []
     url = url
