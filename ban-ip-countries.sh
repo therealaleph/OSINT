@@ -5,6 +5,6 @@ for i in "${COUNTRIES[@]}"; do
 
     for IP in $(wget --no-check-certificate -O - https://www.ipdeny.com/ipblocks/data/countries/${i}.zone)
     do
-        ipset add countries $IP,22
+        ipset add countries $IP
     done
 done
