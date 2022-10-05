@@ -13,7 +13,7 @@ CONFIGNAME="config.json"
 CONFIGLOGLEVEL='info'
 WEBSOCKETPATH='/graphql'
 DOCKERCOMPOSEVERSION='2.11.1'
-LINKNAME='v2ray'
+LINKNAME='t.me/alephvmesslinkbot'
 
 permissioncheck(){
 ROOT_UID=0
